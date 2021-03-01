@@ -151,7 +151,7 @@
     }      
  }
 
- @media screen and (max-height: 500px) {
+ @media screen and (max-height: 600px) {
 
     #play label::before {
         height: 0.7rem;
