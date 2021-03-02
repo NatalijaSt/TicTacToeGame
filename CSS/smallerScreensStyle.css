@@ -113,7 +113,7 @@
         line-height: 10vh;
     }
     #refresh , #rules {
-        font-size: 30%;
+        /* font-size: 30%; */
     /* da se text ne bi prelamao ide nowrap na razmake izmedju reci*/
          white-space: nowrap; 
     /*overflow:hidden je u ovom slucaju bolja opcija od auto ili scroll-a*/
@@ -158,5 +158,9 @@
         width: 0.7rem;
         top: 25%;
         left: 6%;
+    }
+    #play input[type="radio"]:checked+label::before {
+        height: 0.4rem;
+        width: 0.4rem;
     }
  }
