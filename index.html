@@ -53,12 +53,15 @@
             <div id="a1">
                 <span>Make a choice:</span>
             </div>
-
+            <!-- the problem occured only with Firefox Mozilla(not with Chrome, Edge, Android):
+             when you refresh the page, if the box was checked, it would stay checked;
+            and the solution for it was to add attribute autocomplete="off"
+             to the input[radio] tags -->
             <div id="a2">
                 <div id="play">
-                    <input type="radio" id="vsPlayer" name="plays">
+                    <input type="radio" id="vsPlayer" name="plays" autocomplete="off">
                     <label for="vsPlayer">vs Player</label>
-                    <input type="radio" id="vsComputer" name="plays">
+                    <input type="radio" id="vsComputer" name="plays" autocomplete="off">
                     <label for="vsComputer">vs Computer</label>
                 </div>
             </div>
@@ -99,10 +102,10 @@
         </div>
 
     </div>
-    
+
     <script src="./JS/buttons&styles.js"></script>
     <script src="./JS/gameLogic.js"></script>
-    
+
 </body>
 
 </html>
